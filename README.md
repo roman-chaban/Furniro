@@ -33,11 +33,3 @@ Furniro serves a diverse audience, including homeowners, renters, interior desig
 ## Conclusion
 
 Furniro is more than just an online furniture store; it’s a complete digital experience designed to meet modern shopping needs. By combining advanced technology with exceptional service, we aim to redefine the way people shop for furniture and create spaces they love.
-
-## Getting Started
-
-To get started with Furniro, clone this repository and follow the setup instructions in `SETUP.md`. For any issues or contributions, please refer to the [Contributing Guide](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
