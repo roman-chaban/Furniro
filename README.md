@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Furniro
+
+## Overview
+
+Furniro is an innovative platform aimed at transforming the furniture shopping experience through cutting-edge technology and user-centered design. Our goal is to create a comprehensive and intuitive online marketplace that makes furniture shopping both efficient and enjoyable.
+
+## Features
+
+- **Virtual Showroom**: Explore a wide range of furniture in a 3D environment. Visualize how different pieces would look in your own space before making a purchase.
+  
+- **Augmented Reality (AR)**: Use AR technology to place virtual furniture in your real-life environment with your mobile device. Assess fit and style within your existing decor.
+
+- **Personalized Recommendations**: Receive tailored furniture suggestions based on your preferences, browsing history, and purchase behavior through advanced algorithms.
+
+- **Sustainability Focus**: Partner with eco-friendly brands and offer products made from sustainable materials. Detailed environmental impact information is provided for each product.
+
+- **Customizable Options**: Customize various aspects of your chosen furniture, including color, fabric, and dimensions, ensuring a perfect fit for your home.
+
+- **Seamless Integration**: Benefit from integrated payment gateways and delivery services. Track orders in real-time and manage purchases via a user-friendly dashboard.
+
+- **Expert Advice**: Access design tips, maintenance guides, and customer reviews to make informed purchasing decisions.
+
+## Benefits
+
+- **Convenience**: Shop from the comfort of your home and have furniture delivered directly to your doorstep.
+- **Efficiency**: Quickly find the perfect piece with advanced search and filtering options.
+- **Confidence**: Make informed decisions with virtual tools and detailed product information.
+
+## Target Audience
+
+Furniro serves a diverse audience, including homeowners, renters, interior designers, and anyone looking to enhance their living space with stylish and functional furniture.
+
+## Conclusion
+
+Furniro is more than just an online furniture store; it’s a complete digital experience designed to meet modern shopping needs. By combining advanced technology with exceptional service, we aim to redefine the way people shop for furniture and create spaces they love.
 
 ## Getting Started
 
-First, run the development server:
+To get started with Furniro, clone this repository and follow the setup instructions in `SETUP.md`. For any issues or contributions, please refer to the [Contributing Guide](CONTRIBUTING.md).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## License
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
