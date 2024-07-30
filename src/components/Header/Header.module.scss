@@ -1,2 +1,49 @@
 @use '../../assets/styles/colors.scss' as colors;
 @use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+@use '../../assets/styles/fonts.scss' as font;
+
+.header .header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: toRem(28.5px) toRem(100px) toRem(28.7px) toRem(54px);
+}
+
+.header {
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: toRem(5px);
+}
+
+.headerLogo__capture {
+  font-weight: 700;
+  color: colors.$color-primary;
+  font-size: vars.$logo-size;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: toRem(75px);
+
+  .listLink {
+    font-family: font.$poppins;
+    color: colors.$color-primary;
+    font-weight: 500;
+    font-size: vars.$subheading-primary-size;
+  }
+}
+
+.headerNav__features {
+  display: flex;
+  align-items: center;
+  gap: toRem(45px);
+}
