@@ -2,3 +2,8 @@
   $baseFontSize: 16px;
   @return calc($pxValue / $baseFontSize) * 1rem;
 }
+
+@function toEm($pxValue) {
+  $baseFontSize: 16px;
+  @return calc($pxValue / $baseFontSize) * 1em;
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Poppins, Montserrat } from 'next/font/google';
 import '@/assets/styles/layout.scss';
+import { Header } from '@/components/Header/Header';
+import { Footer } from '@/components/Footer/Footer';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,7 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fonts}>{children}</body>
+      <body className={fonts}>
+        <Header />
+        <main className="main">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

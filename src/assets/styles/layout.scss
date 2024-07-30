@@ -1,3 +1,15 @@
 @use './reset.scss';
 @use './colors.scss' as colors;
 @use './variables.scss' as vars;
+@use './functions.scss' as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+  min-height: 100vh;
+}
