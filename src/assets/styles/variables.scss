@@ -1,0 +1,17 @@
+@use './functions.scss' as *;
+
+$logo-size: toRem(34px);
+$nav-item-font-size: toRem(16px);
+$heading-primary-size: toRem(52px);
+$subheading-primary-size: toRem(18px);
+$heading-secondary-size: toRem(32px);
+$subheading-secondary-size: toRem(20px);
+$card-heading-size: toRem(24px);
+$heading-tertiary-size: toRem(40px);
+$card-heading-secondary-size: toRem(28px);
+$heading-quaternary-size: toRem(25px);
+$subheading-small-size: toRem(13px);
+$product-heading-size: toRem(42px);
+$product-subheading-size: toRem(14px);
+$product-related-size: toRem(36px);
+$product-comparison-size: toRem(48px);
