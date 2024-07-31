@@ -1,0 +1,70 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+@use '../../assets/styles/fonts.scss' as *;
+
+.heroSection {
+  font-family: $poppins;
+}
+
+.heroSection .heroContent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: toRem(720px);
+  background: url('/images/hero/hero-banner.svg') no-repeat center center;
+  object-fit: cover;
+  margin-bottom: toRem(56px);
+}
+
+.heroBanner {
+  position: absolute;
+  padding: toRem(63px) toRem(43px) toRem(37px) toRem(39px);
+  right: 50px;
+  width: 100%;
+  max-width: 643px;
+  height: toRem(450px);
+  border-radius: 10px;
+  background: colors.$color-background-tertiary;
+  display: flex;
+  flex-direction: column;
+  gap: toRem(5px);
+}
+
+.heroSubtitle {
+  letter-spacing: 0.19em;
+  font-weight: 600;
+  color: colors.$color-accent-dark-green;
+  font-size: vars.$nav-item-font-size;
+}
+
+.heroTitle {
+  font-weight: 700;
+  line-height: 125%;
+  color: colors.$color-tertiary;
+  font-size: vars.$heading-primary-size;
+  padding-bottom: toRem(17px);
+}
+
+.heroDescription {
+  padding-bottom: toRem(46px);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: colors.$color-accent-dark-green;
+  font-size: vars.$subheading-primary-size;
+}
+
+.heroButton {
+  width: 100%;
+  max-width: toRem(230px);
+  height: 74px;
+  font-weight: 700;
+  font-size: vars.$nav-item-font-size;
+  color: colors.$color-background;
+  background: colors.$color-tertiary;
+  text-transform: uppercase;
+}
