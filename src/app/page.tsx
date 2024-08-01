@@ -1,3 +1,4 @@
+import { BrowseCategories } from '@/components/BrowseCategories/BrowseCategories';
 import { Hero } from '@/components/Hero/Hero';
 import type { Metadata } from 'next';
 
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <BrowseCategories />
     </>
   );
 }

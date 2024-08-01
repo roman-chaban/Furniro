@@ -1,0 +1,62 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.browseCategories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.browseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: toRem(65px);
+  margin-bottom: toRem(60px);
+}
+
+.browseTitles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: toRem(7px);
+}
+
+.browseTitle {
+  font-weight: 700;
+  color: colors.$color-accent-dark-green;
+  font-size: vars.$heading-secondary-size;
+}
+
+.browseSubTitle {
+  color: colors.$color-accent-dark-gray;
+  font-size: vars.$subheading-secondary-size;
+}
+
+.browseCategoriesCards {
+  display: flex;
+  align-items: center;
+  gap: toRem(20px);
+}
+
+.categoryCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: toRem(30px);
+}
+
+.cardImage {
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.categoryCardTitle {
+  font-weight: 600;
+  font-size: vars.$card-heading-size;
+  color: colors.$color-accent-dark-green;
+}

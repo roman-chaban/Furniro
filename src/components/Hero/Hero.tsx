@@ -14,9 +14,7 @@ export const Hero: FC = () => {
             furniture shopping experience through cutting-edge technology and
             user-centered design.
           </p>
-          <Button type="button" className={styles.heroButton}>
-            BUY Now
-          </Button>
+          <Button className={styles.heroButton}>BUY Now</Button>
         </div>
       </div>
     </section>
