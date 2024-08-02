@@ -4,7 +4,9 @@ export interface CategoryCard {
   href: string;
 }
 
-export const categoriesCards: CategoryCard[] = [
+export type CategoryCards = CategoryCard[];
+
+export const categoriesCards: CategoryCards = [
   {
     image: '/images/browse/primary.svg',
     title: 'Dining',
