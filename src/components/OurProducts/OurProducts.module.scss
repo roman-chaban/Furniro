@@ -1,0 +1,226 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.ourProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourProducts__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: toRem(35px);
+  margin-bottom: toRem(70px);
+}
+
+.ourProducts__title {
+  color: colors.$color-dark;
+  font-size: vars.$heading-tertiary-size;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.productsCards {
+  padding: 0 toRem(40px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: toRem(32px);
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.productCard {
+  width: 100%;
+  max-width: 285px;
+  height: 430px;
+  background: colors.$color-accent-card-background;
+
+  @media (max-width: 1200px) {
+    max-width: 350px;
+    height: auto;
+  }
+
+  @media (max-width: 900px) {
+    max-width: 300px;
+    height: auto;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.productImageBlock {
+  position: relative;
+}
+
+.productCardImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.discountPercentage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  background: colors.$color-accent-red;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  line-height: 150%;
+  font-weight: 500;
+  color: colors.$color-background;
+}
+
+.productCardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(10px);
+  padding: toRem(16px) toRem(20px) toRem(30px) toRem(16px);
+
+  @media (max-width: 600px) {
+    padding: toRem(12px);
+  }
+}
+
+.productCardTitle {
+  @media (max-width: 600px) {
+    font-size: toRem(16px);
+  }
+}
+
+.productCardSubTitle {
+  @media (max-width: 600px) {
+    font-size: toRem(14px);
+  }
+}
+
+.productCardTitle {
+  line-height: 120%;
+  font-weight: 600;
+  font-size: vars.$card-heading-size;
+  color: colors.$color-dark;
+}
+
+.productCardSubTitle {
+  line-height: 150%;
+  font-weight: 500;
+  color: colors.$color-gray-primary;
+}
+
+.productCardPrices {
+  display: flex;
+  align-items: center;
+  gap: toRem(20px);
+}
+
+.productCarOriginalPrice {
+  line-height: 150%;
+  font-weight: 500;
+  color: colors.$color-dark;
+  font-size: vars.$subheading-secondary-size;
+}
+
+.productCardDiscountedPrice {
+  line-height: 150%;
+  text-decoration: line-through;
+  color: colors.$color-gray-secondary;
+}
+
+.ourProductsShowMoreButton {
+  width: 100%;
+  max-width: 245px;
+  height: toRem(55px);
+  line-height: 150%;
+  font-weight: 600;
+  background: transparent;
+  color: colors.$color-tertiary;
+  border: 1.5px solid colors.$color-tertiary;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  .productImageBlock {
+    position: relative;
+  }
+
+  .additionalInfo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: (rgba(colors.$color-dark, 0.7));
+    color: colors.$color-background;
+    padding: 20px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: toRem(25px);
+    align-items: center;
+    text-align: center;
+
+    .infoButton {
+      width: 100%;
+      max-width: toRem(205px);
+      height: 48px;
+      font-weight: 600;
+      background: colors.$color-background;
+      line-height: 150%;
+      color: colors.$color-tertiary;
+      cursor: pointer;
+      transition: background 0.5s ease-in-out;
+    }
+  }
+
+  &:hover .additionalInfo {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.additionalSocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: toRem(25px);
+}
+
+.additionalInfoItems {
+  display: flex;
+  align-items: center;
+  gap: toRem(5px);
+}
+
+.additionalInfoTitle {
+  font-weight: 600;
+  line-height: 150%;
+}

@@ -3,6 +3,11 @@
 @use './variables.scss' as vars;
 @use './functions.scss' as *;
 
+
+* {
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+
 body {
   display: flex;
   flex-direction: column;

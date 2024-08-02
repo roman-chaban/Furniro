@@ -1,0 +1,66 @@
+[
+    {
+        "imageUrl": "/products/primary.svg",
+        "discountPercentage": "-30%",
+        "productName": "Syltherine",
+        "shortDescription": "Stylish cafe chair",
+        "originalPrice": "Rp 2.500.000",
+        "discountedPrice": "Rp 3.500.000"
+    },
+    {
+        "imageUrl": "/products/secondary.svg",
+        "discountPercentage": "",
+        "productName": "Leviosa",
+        "shortDescription": "Stylish cafe chair",
+        "originalPrice": "Rp 2.500.000",
+        "discountedPrice": ""
+    },
+    {
+        "imageUrl": "/products/tertiary.svg",
+        "discountPercentage": "-50%",
+        "productName": "Lolito",
+        "shortDescription": "Luxury big sofa",
+        "originalPrice": "Rp 7.000.000",
+        "discountedPrice": "Rp 14.000.000"
+    },
+    {
+        "imageUrl": "/products/fourth.svg",
+        "discountPercentage": "New",
+        "productName": "Respire",
+        "shortDescription": "Outdoor bar table and stool",
+        "originalPrice": "Rp 500.000",
+        "discountedPrice": ""
+    },
+    {
+        "imageUrl": "/products/five.svg",
+        "discountPercentage": "",
+        "productName": "Griff",
+        "shortDescription": "Night lamp",
+        "originalPrice": "Rp 1.500.000",
+        "discountedPrice": ""
+    },
+    {
+        "imageUrl": "/products/six.svg",
+        "discountPercentage": "New",
+        "productName": "Muggo",
+        "shortDescription": "Small mug",
+        "originalPrice": "Rp 150.000",
+        "discountedPrice": ""
+    },
+    {
+        "imageUrl": "/products/seven.svg",
+        "discountPercentage": "-50%",
+        "productName": "Pingky",
+        "shortDescription": "Cute bed set",
+        "originalPrice": "Rp 7.000.000",
+        "discountedPrice": "Rp 14.000.000"
+    },
+    {
+        "imageUrl": "/products/eight.svg",
+        "discountPercentage": "New",
+        "productName": "Potty",
+        "shortDescription": "Minimalist flower pot",
+        "originalPrice": "Rp 500.000",
+        "discountedPrice": ""
+    }
+]

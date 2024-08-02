@@ -1,5 +1,6 @@
 import { BrowseCategories } from '@/components/BrowseCategories/BrowseCategories';
 import { Hero } from '@/components/Hero/Hero';
+import { OurProducts } from '@/components/OurProducts/OurProducts';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <BrowseCategories />
+      <OurProducts />
     </>
   );
 }
