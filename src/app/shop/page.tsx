@@ -1,9 +1,9 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Furniro | Shop',
 };
 
 export default function Shop() {
-  return <section></section>;
+  return <section>Shop</section>;
 }
