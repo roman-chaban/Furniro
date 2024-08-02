@@ -102,7 +102,6 @@
 
   &:hover {
     border: #9F9F9F solid 1px;
-    padding-left: 14px;
   }
 }
 
@@ -125,6 +124,7 @@
   align-items: center;
   gap: 5px;
   border-radius: 5px;
+  z-index: 2;
 }
 
 .dropdownShow {
@@ -154,4 +154,8 @@
   &:hover {
     background-color: #9F9F9F;
   }
+}
+
+.productList {
+  margin: 46px 0 46px 0;
 }

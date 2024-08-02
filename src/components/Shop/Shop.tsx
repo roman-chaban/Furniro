@@ -2,8 +2,11 @@ import type { FC } from 'react';
 import styles from './Shop.module.scss';
 import { Arrow } from '../UI components/Button/ArrowLink';
 import { ProductHeader } from './ProductHeader';
+import { OurProducts } from '../OurProducts/OurProducts';
 
 export const ShopComponent: FC = () => {
+  let isShop = true;
+
   return (
     <section className={styles.shopSection}>
       <div className={styles.posterSection}>
@@ -19,7 +22,7 @@ export const ShopComponent: FC = () => {
       <div className={styles.productSection}>
         <ProductHeader />
         <div className={styles.productList}>
-          <div className={styles.productCard}></div>
+          <OurProducts isShop={true} />
         </div>
       </div>
     </section>
