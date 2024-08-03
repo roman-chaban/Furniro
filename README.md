@@ -1,4 +1,4 @@
-# Furniro
+# Furniro Team project
 
 ## Overview
 
