@@ -9,40 +9,6 @@
   font-family: $poppins;
 }
 
-.posterSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 316px;
-  background: url('/images/shop/ShopPoster.png') no-repeat;
-}
-
-.linksContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.shopTitle {
-  color: #000;
-  font-size: 48px;
-  font-weight: 500;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-  gap: 6px;
-}
-
-.link {
-  margin-top: 2px;
-  color: #000;
-  font-size: 16px;
-  font-weight: 300;
-}
-
 .productHeader {
   max-width: 1440px;
   height: 100px;
@@ -52,6 +18,7 @@
   align-items: center;
   padding-inline: 100px;
   justify-content: space-between;
+  z-index: 3;
 }
 
 .contentLeft {

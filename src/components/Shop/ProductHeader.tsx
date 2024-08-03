@@ -1,9 +1,23 @@
-import type { FC } from "react";
+"use client";
+
+import { useState, type FC } from "react";
 import styles from "./Shop.module.scss";
 
 export const ProductHeader: FC = () => {
+  const [isSortDropdownOpen, setIsSortDropdownOpen] = useState<boolean>(false);
+  const [isShowDropdownOpen, setIsShowDropdownOpen] = useState<boolean>(false);
   const listDpopdownItems = ["8", "16", "32"];
   const listDropdownPrice = ["Name", "Expensive", "Cheaper"];
+  
+  const dropdownHandler = (id: string) => {
+    if (id === 'sort') {
+      setIsSortDropdownOpen(prev => !prev);
+    }
+  
+    if (id === 'show') {
+      setIsShowDropdownOpen(prev => !prev);
+    }
+  };
 
   return (
     <section className={styles.productHeader}>
@@ -54,8 +68,13 @@ export const ProductHeader: FC = () => {
       </div>
       <div className={styles.contentRight}>
         <p className={styles.text}>Show</p>
-        <div className={`${styles.input} ${styles.show}`}>16</div>
-        {false && (
+        <div
+          className={`${styles.input} ${styles.show}`}
+          onClick={() => dropdownHandler("show")}
+        >
+          16
+        </div>
+        {isShowDropdownOpen && (
           <ul className={`${styles.dropdown} ${styles.dropdownShow}`}>
             {listDpopdownItems.map((item) => (
               <li className={styles.dropdownItem} key={item}>
@@ -65,8 +84,13 @@ export const ProductHeader: FC = () => {
           </ul>
         )}
         <p className={styles.text}>Short by</p>
-        <div className={`${styles.input} ${styles.sort}`}>Default</div>
-        {false && (
+        <div
+          className={`${styles.input} ${styles.sort}`}
+          onClick={() => dropdownHandler("sort")}
+        >
+          Default
+        </div>
+        {isSortDropdownOpen && (
           <ul className={`${styles.dropdown} ${styles.dropdownSort}`}>
             {listDropdownPrice.map((sort) => (
               <li className={styles.dropdownItem} key={sort}>
