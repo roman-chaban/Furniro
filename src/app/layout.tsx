@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Poppins, Montserrat } from 'next/font/google';
 import '@/assets/styles/layout.scss';
-import { Header } from '@/components/Header/Header';
+import Header from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { MainContainer } from '@/customContainers/mainContainer';
 
@@ -10,12 +10,12 @@ const poppins = Poppins({
   weight: ['400', '500', '600', '700', '800', '900'],
 });
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800', '800'],
-});
+// const montserrat = Montserrat({
+//   subsets: ['latin'],
+//   weight: ['400', '500', '600', '700', '800', '800'],
+// });
 
-const fonts = `${poppins.className} ${montserrat.className}`;
+const fonts = `${poppins.className}`;
 
 export const metadata: Metadata = {
   title: 'Furniro',

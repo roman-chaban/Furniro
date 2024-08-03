@@ -1,0 +1,51 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.roomsInspiration {
+  min-height: 670px;
+  background: colors.$color-background-secondary;
+  display: flex;
+  align-items: center;
+}
+
+.roomsContainer {
+  display: flex;
+  align-items: center;
+  gap: toRem(42px);
+}
+
+.roomsInformation {
+  margin-left: toRem(100px);
+  width: 100%;
+  max-width: toRem(450px);
+  display: flex;
+  flex-direction: column;
+  gap: toRem(10px);
+}
+
+.roomsTitle {
+  color: colors.$color-dark;
+  font-size: vars.$heading-tertiary-size;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.roomsSubTitle {
+  width: 100%;
+  max-width: 368px;
+  color: colors.$color-gray-tertiary;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.exploreButton {
+  color: colors.$color-background;
+  background: colors.$color-tertiary;
+  padding: toRem(16px) toRem(32px);
+  width: 100%;
+  max-width: 176px;
+  margin-top: toRem(15px);
+  font-weight: 600;
+  line-height: 150%;
+}

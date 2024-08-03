@@ -1,9 +1,13 @@
+'use client';
+
 import type { FC } from 'react';
 import styles from './Header.module.scss';
 import { NavigationPaths } from '@/enums/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { navigationFeatures } from '@/constants/navigationFeatures';
+import { usePathname } from 'next/navigation';
+import dynamic from 'next/dynamic';
 
 const navigationPaths = Object.keys(NavigationPaths) as Array<
   keyof typeof NavigationPaths
@@ -11,7 +15,8 @@ const navigationPaths = Object.keys(NavigationPaths) as Array<
 
 const logoPath = '/favicon/furniro-favicon.svg';
 
-export const Header: FC = () => {
+const Header: FC = () => {
+  const pathname = usePathname();
   return (
     <header className={styles.header}>
       <div className={styles.header__container}>
@@ -47,3 +52,5 @@ export const Header: FC = () => {
     </header>
   );
 };
+
+export default dynamic(() => Promise.resolve(Header), { ssr: false });
