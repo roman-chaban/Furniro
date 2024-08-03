@@ -1,7 +1,10 @@
-import type { FC } from 'react';
-import styles from './Shop.module.scss';
+import type { FC } from "react";
+import styles from "./Shop.module.scss";
 
 export const ProductHeader: FC = () => {
+  const listDpopdownItems = ["8", "16", "32"];
+  const listDropdownPrice = ["Name", "Expensive", "Cheaper"];
+
   return (
     <section className={styles.productHeader}>
       <div className={styles.contentLeft}>
@@ -52,18 +55,26 @@ export const ProductHeader: FC = () => {
       <div className={styles.contentRight}>
         <p className={styles.text}>Show</p>
         <div className={`${styles.input} ${styles.show}`}>16</div>
-        <ul className={`${styles.dropdown} ${styles.dropdownShow}`}>
-          <li className={styles.dropdownItem}>8</li>
-          <li className={styles.dropdownItem}>16</li>
-          <li className={styles.dropdownItem}>32</li>
-        </ul>
+        {false && (
+          <ul className={`${styles.dropdown} ${styles.dropdownShow}`}>
+            {listDpopdownItems.map((item) => (
+              <li className={styles.dropdownItem} key={item}>
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
         <p className={styles.text}>Short by</p>
         <div className={`${styles.input} ${styles.sort}`}>Default</div>
-        <ul className={`${styles.dropdown} ${styles.dropdownSort}`}>
-          <li className={styles.dropdownItem}>Name</li>
-          <li className={styles.dropdownItem}>Expensive</li>
-          <li className={styles.dropdownItem}>Cheaper</li>
-        </ul>
+        {false && (
+          <ul className={`${styles.dropdown} ${styles.dropdownSort}`}>
+            {listDropdownPrice.map((sort) => (
+              <li className={styles.dropdownItem} key={sort}>
+                {sort}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </section>
   );

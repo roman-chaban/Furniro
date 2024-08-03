@@ -99,10 +99,6 @@
   color: #9F9F9F;
   font-size: 20px;
   font-weight: 400;
-
-  &:hover {
-    border: #9F9F9F solid 1px;
-  }
 }
 
 .show {
@@ -158,4 +154,46 @@
 
 .productList {
   margin: 46px 0 46px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits {
+  display: flex;
+  max-width: 1440px;
+  height: 270px;
+  padding: 100px 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  background: #FAF3EA;
+}
+
+.benefitsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameDetail {
+  color: #242424;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.descriptionDetail {
+  color: var(--Color-Gray-3, #898989);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
 }

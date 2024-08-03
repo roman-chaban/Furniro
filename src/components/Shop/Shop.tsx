@@ -1,8 +1,10 @@
-import type { FC } from 'react';
-import styles from './Shop.module.scss';
-import { Arrow } from '../UI components/Button/ArrowLink';
-import { ProductHeader } from './ProductHeader';
-import { OurProducts } from '../OurProducts/OurProducts';
+import type { FC } from "react";
+import styles from "./Shop.module.scss";
+import { Arrow } from "../UI components/Button/ArrowLink";
+import { ProductHeader } from "./ProductHeader";
+import { OurProducts } from "../OurProducts/OurProducts";
+import { Pagination } from "./Pangination";
+import { Benefits } from "./Benefits";
 
 export const ShopComponent: FC = () => {
   let isShop = true;
@@ -23,8 +25,10 @@ export const ShopComponent: FC = () => {
         <ProductHeader />
         <div className={styles.productList}>
           <OurProducts isShop={true} />
+          <Pagination />
         </div>
       </div>
+      <Benefits />
     </section>
   );
 };

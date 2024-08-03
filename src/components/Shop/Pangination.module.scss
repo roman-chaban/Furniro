@@ -1,0 +1,65 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+@use '../../assets/styles/fonts.scss' as *;
+
+.pangination {
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+  align-items: center;
+}
+
+.button {
+  width: 98px;
+  height: 60px;
+  border-radius: 10px;
+  background: #F9F1E7;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  outline: transparent;
+
+  &:hover {
+    background: #f6e2cc;
+  }
+
+  &:active {
+    background: var(--Primary, #B88E2F);
+    color: #FFF;
+  }
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: #F9F1E7;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+
+  &:hover {
+    background: #f6e2cc;
+  }
+
+  &:active {
+    background: var(--Primary, #B88E2F);
+    color: #FFF;
+  }
+}
+
+.pageActive {
+  background: var(--Primary, #B88E2F);
+  color: #FFF;
+
+  &:hover {
+    background: #B88E2F;
+  }
+}
