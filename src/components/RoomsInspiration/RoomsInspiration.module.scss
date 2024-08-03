@@ -10,6 +10,7 @@
 }
 
 .roomsContainer {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: toRem(42px);
@@ -22,6 +23,14 @@
   display: flex;
   flex-direction: column;
   gap: toRem(10px);
+}
+
+.roomsBanner {
+  position: relative;
+  background: url('/images/rooms/roomsBanner.svg') no-repeat center center;
+  width: 100%;
+  max-width: 405px;
+  height: 582px;
 }
 
 .roomsTitle {
@@ -48,4 +57,56 @@
   margin-top: toRem(15px);
   font-weight: 600;
   line-height: 150%;
+}
+
+.innerPeace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  gap: toRem(10px);
+  bottom: 24px;
+  left: 24px;
+  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.72);
+  width: 100%;
+  max-width: toRem(255px);
+  height: toRem(150px);
+}
+
+.innerTitle {
+  font-weight: 600;
+  line-height: 120%;
+  color: colors.$color-dark;
+  font-size: vars.$card-heading-secondary-size;
+}
+
+.innerLine {
+  display: block;
+  width: 27px;
+  height: 1px;
+  background: colors.$color-gray-tertiary;
+}
+
+.innerSubTitle {
+  display: flex;
+  align-items: center;
+  gap: toRem(10px);
+  color: colors.$color-gray-tertiary;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.innerButton {
+  position: absolute;
+  bottom: 24.5px;
+  left: 247px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 48px;
+  height: 48px;
+  background: colors.$color-tertiary;
 }

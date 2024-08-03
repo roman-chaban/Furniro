@@ -1,2 +1,108 @@
 @use '../../assets/styles/colors.scss' as colors;
 @use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1.5px solid colors.$color-footer-border-top;
+  margin-top: toRem(60px);
+  padding: toRem(48px) toRem(100px) toRem(48px) toRem(100px);
+}
+
+.footerMenu {
+  display: flex;
+  gap: toRem(135px);
+  padding-bottom: toRem(50px);
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(60px);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: vars.$card-heading-size;
+}
+
+.logoSubTitle {
+  width: 100%;
+  max-width: toRem(285px);
+  color: colors.$color-gray-light;
+  line-height: 150%;
+}
+
+.footerCopyright {
+  color: colors.$color-primary;
+  font-weight: 500;
+  padding-top: toRem(35px);
+  border-top: 1.5px solid colors.$color-footer-border-top;
+}
+
+.footerMenus {
+  display: flex;
+  gap: toRem(160px);
+}
+
+.linksMenu,
+.helpMenu,
+.footerNewsLetter {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(46px);
+}
+
+.linksMenuTitle,
+.helpMenuTitle,
+.newsLetterTitle {
+  font-weight: 500;
+  color: colors.$color-gray-light;
+  padding-bottom: toRem(10px);
+}
+
+.newsLetterTitle {
+  padding-bottom: toRem(6px);
+}
+
+.listItem > .listLink {
+  font-weight: 500;
+  color: colors.$color-primary;
+}
+
+.listItem {
+  font-weight: 500;
+  color: colors.$color-primary;
+}
+
+.newsLetterForm {
+  display: flex;
+  align-items: center;
+  gap: toRem(15px);
+}
+
+.subscribeButton {
+  font-weight: 500;
+  color: colors.$color-primary;
+  background: transparent;
+  padding-bottom: toRem(3px);
+  border-bottom: 1.5px solid colors.$color-primary;
+}
+
+.newsLetterLabel {
+  width: 200px;
+  padding-bottom: toRem(3px);
+  border-bottom: 1.5px solid colors.$color-primary;
+}
+
+.newsLetterInput {
+  width: 100%;
+  max-width: 173px;
+  color: colors.$color-gray-light;
+  font-size: vars.$product-subheading-size;
+  &::placeholder {
+    color: colors.$color-gray-light;
+  }
+}

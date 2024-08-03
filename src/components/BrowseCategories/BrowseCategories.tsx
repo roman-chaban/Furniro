@@ -21,6 +21,7 @@ export const BrowseCategories: FC = () => {
           {categoriesCards.map((card: CategoryCard) => (
             <div className={styles.categoryCard} key={card.title}>
               <Image
+                priority
                 className={styles.cardImage}
                 src={card.image}
                 alt={card.title}

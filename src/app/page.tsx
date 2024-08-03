@@ -16,6 +16,7 @@ export default function Home() {
       <Hero />
       <BrowseCategories />
       <OurProducts isShop={isShop} />
+      <RoomsInspiration />
     </>
   );
 }
