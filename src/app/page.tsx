@@ -9,12 +9,13 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  let isShop = false;
+
   return (
     <>
       <Hero />
       <BrowseCategories />
-      <OurProducts />
-      <RoomsInspiration />
+      <OurProducts isShop={isShop} />
     </>
   );
 }

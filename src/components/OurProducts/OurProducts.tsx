@@ -1,14 +1,18 @@
-'use client';
+"use client";
 
-import { Fragment, useEffect, useState, type FC } from 'react';
-import styles from './OurProducts.module.scss';
-import products from '@/api/products/products.json';
-import { Product } from '@/interfaces/products';
-import Image from 'next/image';
-import { Button } from '../UI components/Button/Button';
-import { additionalSocials } from '@/constants/additionalMedias';
+import { Fragment, useEffect, useState, type FC } from "react";
+import styles from "./OurProducts.module.scss";
+import products from "@/api/products/products.json";
+import { Product } from "@/interfaces/products";
+import Image from "next/image";
+import { Button } from "../UI components/Button/Button";
+import { additionalSocials } from "@/constants/additionalMedias";
 
-export const OurProducts: FC = () => {
+interface Props {
+  isShop: boolean;
+}
+
+export const OurProducts: FC<Props> = ({ isShop }) => {
   const [currentProducts, setCurrentProducts] = useState<Product[]>();
 
   useEffect(() => {
@@ -18,7 +22,7 @@ export const OurProducts: FC = () => {
   return (
     <section className={styles.ourProducts}>
       <div className={styles.ourProducts__container}>
-        <h2 className={styles.ourProducts__title}>Our Products</h2>
+        {!isShop && <h2 className={styles.ourProducts__title}>Our Products</h2>}
         <div className={styles.productsCards}>
           {currentProducts?.map((product: Product) => (
             <div key={product.productName} className={styles.productCard}>
@@ -34,11 +38,11 @@ export const OurProducts: FC = () => {
                   className={styles.discountPercentage}
                   style={{
                     background:
-                      product.discountPercentage === ''
-                        ? 'none'
-                        : product.discountPercentage === 'New'
-                        ? '#2ec1ac'
-                        : '',
+                      product.discountPercentage === ""
+                        ? "none"
+                        : product.discountPercentage === "New"
+                        ? "#2ec1ac"
+                        : "",
                   }}
                 >
                   {product.discountPercentage}
@@ -76,7 +80,11 @@ export const OurProducts: FC = () => {
             </div>
           ))}
         </div>
-        <Button className={styles.ourProductsShowMoreButton}>Show More</Button>
+        {!isShop && (
+          <Button className={styles.ourProductsShowMoreButton}>
+            Show More
+          </Button>
+        )}
       </div>
     </section>
   );
