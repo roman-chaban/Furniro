@@ -9,18 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/swc-win32-x64-msvc": "^14.2.5",
     "@reduxjs/toolkit": "^2.2.7",
     "grommet-icons": "^4.12.1",
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "redux-persist": "^6.0.0",
     "sass": "^1.77.8",
     "scss": "^0.2.4",
     "styled-components": "^6.1.12",
-    "swiper": "^11.1.8"
+    "swiper": "^11.1.9"
   },
   "devDependencies": {
+    "@types/next": "^8.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

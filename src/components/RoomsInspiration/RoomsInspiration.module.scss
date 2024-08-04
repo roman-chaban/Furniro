@@ -12,7 +12,6 @@
 .roomsContainer {
   width: 100%;
   display: flex;
-  align-items: center;
   gap: toRem(42px);
 }
 
@@ -22,6 +21,7 @@
   max-width: toRem(450px);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: toRem(10px);
 }
 
@@ -31,6 +31,7 @@
   width: 100%;
   max-width: 405px;
   height: 582px;
+  margin-left: 24px;
 }
 
 .roomsTitle {

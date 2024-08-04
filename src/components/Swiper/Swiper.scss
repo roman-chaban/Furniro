@@ -1,0 +1,46 @@
+@use '../../assets/styles/colors.scss' as colors;
+
+.swiper-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .swiper {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 380px;
+    margin-right: 0;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+}
+
+.swiper-pagination {
+  display: none !important;
+}
+
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-next {
+  right: 81px;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background: colors.$color-background !important;
+  box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.16);
+  &::after {
+    color: colors.$color-tertiary;
+    padding: 12px !important;
+    font-size: 24px;
+  }
+}

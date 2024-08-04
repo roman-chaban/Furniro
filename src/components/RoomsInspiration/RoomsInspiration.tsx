@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import styles from './RoomsInspiration.module.scss';
 import { Button } from '../UI components/Button/Button';
-import Image from 'next/image';
+import { RoomsSwiper } from '@/components/Swiper/Swiper';
 
 export const RoomsInspiration: FC = () => {
   return (
@@ -42,6 +42,7 @@ export const RoomsInspiration: FC = () => {
             </svg>
           </Button>
         </div>
+        <RoomsSwiper />
       </div>
     </section>
   );

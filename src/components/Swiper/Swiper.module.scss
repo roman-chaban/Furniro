@@ -1,0 +1,28 @@
+@use '../../assets/styles/colors.scss' as colors;
+
+.slider__circles {
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.slider__circle {
+  display: block;
+  border-radius: 100%;
+  width: 11px;
+  height: 11px;
+  background: colors.$color-gray-light-two;
+  border: none;
+  cursor: pointer;
+}
+
+.active {
+  background: colors.$color-tertiary;
+  outline: 1.5px solid colors.$color-tertiary;
+  outline-offset: 8px;
+}
+
+.slideImage {
+  height: auto;
+}
