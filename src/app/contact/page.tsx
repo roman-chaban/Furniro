@@ -1,3 +1,4 @@
+import { Contacts } from '@/components/Contacts/Contacts';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -5,5 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function Contact() {
-  return <section>Contact</section>;
+  return <section><Contacts /></section>;
 }

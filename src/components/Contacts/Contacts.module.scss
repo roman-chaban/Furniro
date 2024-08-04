@@ -1,0 +1,149 @@
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  margin-top: 96px;
+  color: #000;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.description {
+  display: flex;
+  margin-top: 7px;
+  max-width: 644px;
+  color: #9F9F9F;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.formsAndContact {
+  margin: 82px 0 64px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  width: 393px;
+  height: 537px;
+  flex-shrink: 0;
+}
+
+.adressContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.svgIcon {
+  position: absolute;
+  left: -45px;
+  top: -1px;
+}
+
+.contactTitle {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact {
+  display: flex;
+  margin-top: 8px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.formsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+}
+
+.inputName {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input {
+  padding: 29px 29px;
+  width: 528.75px;
+  height: 75px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #9F9F9F;
+  background: #FFF;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #B88E2F;
+  }
+
+  &:active {
+    border: 1px solid #B88E2F;
+  }
+}
+
+.textarea {
+  padding: 26px 29px;
+  width: 527px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #9F9F9F;
+  background: #FFF;
+  resize: none;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #B88E2F;
+  }
+
+  &:active {
+    border: 1px solid #B88E2F;
+  }
+}
+
+.formButton {
+  width: 237px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #B88E2F;
+  background: #B88E2F;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 70%;
+    color: #000;
+  }
+}
+
+
+
+
