@@ -1,0 +1,78 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galleryContainer {
+  display: flex;
+  width: 100%;
+}
+
+.galleryTitlesInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: toRem(10px);
+}
+
+.gallerySubTitle {
+  color: colors.$color-gray-tertiary;
+  font-size: vars.$subheading-secondary-size;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+}
+
+.galleryTitle {
+  color: colors.$color-dark;
+  font-size: vars.$heading-tertiary-size;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+}
+
+.primaryGallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: toRem(16px);
+}
+
+.firstBlock {
+  display: flex;
+  align-items: flex-end;
+  gap: toRem(16px);
+}
+
+.secondBlock {
+  display: flex;
+  gap: toRem(16px);
+}
+
+.thirdBlock,
+.primaryBlock {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(16px);
+}
+
+.thirdPrimary {
+  display: flex;
+  align-items: flex-end;
+  gap: toRem(16px);
+}
+
+.thirdSecondary {
+  display: flex;
+  gap: toRem(16px);
+}
+
+.galleryImage {
+  max-width: 100%;
+  object-fit: cover;
+}

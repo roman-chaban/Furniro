@@ -1,4 +1,5 @@
 import { BrowseCategories } from '@/components/BrowseCategories/BrowseCategories';
+import { FurnituroGallery } from '@/components/FurnituroGallery/FurnituroGallery';
 import { Hero } from '@/components/Hero/Hero';
 import { OurProducts } from '@/components/OurProducts/OurProducts';
 import { RoomsInspiration } from '@/components/RoomsInspiration/RoomsInspiration';
@@ -17,6 +18,7 @@ export default function Home() {
       <BrowseCategories />
       <OurProducts isShop={isShop} />
       <RoomsInspiration />
+      <FurnituroGallery />
     </>
   );
 }
