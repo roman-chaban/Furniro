@@ -1,0 +1,59 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.productInfo {
+  display: flex;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(20px);
+}
+
+.infoTitles {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(8px);
+}
+
+.infoTitle {
+  font-size: vars.$product-heading-size;
+}
+.infoPriceSubTitle {
+  font-weight: 500;
+  font-size: vars.$card-heading-size;
+  color: colors.$color-gray-light;
+}
+
+.infoRatingDescriptionBlock {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.infoRatingBlock {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.centeredElement {
+  width: 30px;
+  height: 1.5px;
+  transform: rotate(90deg);
+  background: colors.$color-gray-light;
+}
+
+.review {
+  font-size: vars.$subheading-small-size;
+  color: colors.$color-gray-light;
+}
+
+.infoDescriptionTitle {
+  line-height: 140%;
+  text-align: justify;
+  font-size: vars.$subheading-small-size;
+  max-width: 400px;
+}

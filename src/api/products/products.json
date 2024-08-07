@@ -5,7 +5,19 @@
         "productName": "Syltherine",
         "shortDescription": "Stylish cafe chair",
         "originalPrice": "Rp 2.500.000",
-        "discountedPrice": "Rp 3.500.000"
+        "discountedPrice": "Rp 3.500.000",
+        "detailImages": [
+            {
+                "primary": "/products/detailImages/primary.svg",
+                "secondary": "/products/detailImages/secondary.svg",
+                "tertiary": "/products/detailImages/tertiary.svg",
+                "fourth": "/products/detailImages/fourth.svg",
+                "main": "/products/detailImages/main.svg"
+            }
+        ],
+        "rating": 4.5,
+        "colorsAvailable": ["#816DFA", "#000", "#B88E2F"],
+        "productDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound."
     },
     {
         "imageUrl": "/products/secondary.svg",
@@ -13,7 +25,19 @@
         "productName": "Leviosa",
         "shortDescription": "Stylish cafe chair",
         "originalPrice": "Rp 2.500.000",
-        "discountedPrice": ""
+        "discountedPrice": "",
+        "detailImages": [
+            {
+                "primary": "/products/detailImages/primary.svg",
+                "secondary": "/products/detailImages/secondary.svg",
+                "tertiary": "/products/detailImages/tertiary.svg",
+                "fourth": "/products/detailImages/fourth.svg",
+                "main": "/products/detailImages/main.svg"
+            }
+        ],
+        "rating": 5,
+        "colorsAvailable": ["#816DFA", "#000", "#B88E2F"],
+        "productDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound."
     },
     {
         "imageUrl": "/products/tertiary.svg",
@@ -21,7 +45,19 @@
         "productName": "Lolito",
         "shortDescription": "Luxury big sofa",
         "originalPrice": "Rp 7.000.000",
-        "discountedPrice": "Rp 14.000.000"
+        "discountedPrice": "Rp 14.000.000",
+        "detailImages": [
+            {
+                "primary": "/products/detailImages/primary.svg",
+                "secondary": "/products/detailImages/secondary.svg",
+                "tertiary": "/products/detailImages/tertiary.svg",
+                "fourth": "/products/detailImages/fourth.svg",
+                "main": "/products/detailImages/main.svg"
+            }
+        ],
+        "rating": 4.4,
+        "colorsAvailable": ["#816DFA", "#000", "#B88E2F"],
+        "productDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound."
     },
     {
         "imageUrl": "/products/fourth.svg",
@@ -29,7 +65,19 @@
         "productName": "Respire",
         "shortDescription": "Outdoor bar table and stool",
         "originalPrice": "Rp 500.000",
-        "discountedPrice": ""
+        "discountedPrice": "",
+        "detailImages": [
+            {
+                "primary": "/products/detailImages/primary.svg",
+                "secondary": "/products/detailImages/secondary.svg",
+                "tertiary": "/products/detailImages/tertiary.svg",
+                "fourth": "/products/detailImages/fourth.svg",
+                "main": "/products/detailImages/main.svg"
+            }
+        ],
+        "rating": 3,
+        "colorsAvailable": ["#816DFA", "#000", "#B88E2F"],
+        "productDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound."
     },
     {
         "imageUrl": "/products/five.svg",
@@ -37,7 +85,19 @@
         "productName": "Griff",
         "shortDescription": "Night lamp",
         "originalPrice": "Rp 1.500.000",
-        "discountedPrice": ""
+        "discountedPrice": "",
+        "detailImages": [
+            {
+                "primary": "/products/detailImages/primary.svg",
+                "secondary": "/products/detailImages/secondary.svg",
+                "tertiary": "/products/detailImages/tertiary.svg",
+                "fourth": "/products/detailImages/fourth.svg",
+                "main": "/products/detailImages/main.svg"
+            }
+        ],
+        "rating": 5,
+        "colorsAvailable": ["#816DFA", "#000", "#B88E2F"],
+        "productDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound."
     },
     {
         "imageUrl": "/products/six.svg",
@@ -45,7 +105,19 @@
         "productName": "Muggo",
         "shortDescription": "Small mug",
         "originalPrice": "Rp 150.000",
-        "discountedPrice": ""
+        "discountedPrice": "",
+        "detailImages": [
+            {
+                "primary": "/products/detailImages/primary.svg",
+                "secondary": "/products/detailImages/secondary.svg",
+                "tertiary": "/products/detailImages/tertiary.svg",
+                "fourth": "/products/detailImages/fourth.svg",
+                "main": "/products/detailImages/main.svg"
+            }
+        ],
+        "rating": 3.5,
+        "colorsAvailable": ["#816DFA", "#000", "#B88E2F"],
+        "productDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound."
     },
     {
         "imageUrl": "/products/seven.svg",
@@ -53,7 +125,19 @@
         "productName": "Pingky",
         "shortDescription": "Cute bed set",
         "originalPrice": "Rp 7.000.000",
-        "discountedPrice": "Rp 14.000.000"
+        "discountedPrice": "Rp 14.000.000",
+        "detailImages": [
+            {
+                "primary": "/products/detailImages/primary.svg",
+                "secondary": "/products/detailImages/secondary.svg",
+                "tertiary": "/products/detailImages/tertiary.svg",
+                "fourth": "/products/detailImages/fourth.svg",
+                "main": "/products/detailImages/main.svg"
+            }
+        ],
+        "rating": 5,
+        "colorsAvailable": ["#816DFA", "#000", "#B88E2F"],
+        "productDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound."
     },
     {
         "imageUrl": "/products/eight.svg",
@@ -61,6 +145,18 @@
         "productName": "Potty",
         "shortDescription": "Minimalist flower pot",
         "originalPrice": "Rp 500.000",
-        "discountedPrice": ""
+        "discountedPrice": "",
+        "detailImages": [
+            {
+                "primary": "/products/detailImages/primary.svg",
+                "secondary": "/products/detailImages/secondary.svg",
+                "tertiary": "/products/detailImages/tertiary.svg",
+                "fourth": "/products/detailImages/fourth.svg",
+                "main": "/products/detailImages/main.svg"
+            }
+        ],
+        "rating": 2.8,
+        "colorsAvailable": ["#816DFA", "#000", "#B88E2F"],
+        "productDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound."
     }
 ]

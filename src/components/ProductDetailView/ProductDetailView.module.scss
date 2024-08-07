@@ -1,0 +1,58 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.product {
+  padding-left: toRem(90px);
+}
+
+.productContainer {
+  margin-top: toRem(32px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: 1200px) {
+    column-gap: 3.25rem;
+  }
+}
+
+.productGallery {
+  display: flex;
+  gap: toRem(31px);
+}
+
+.smallImagesBlock {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(32px);
+}
+
+.smallImagesBlock > .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: colors.$color-background-fourth;
+  border-radius: toRem(10px);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smallImagesBlock .image:nth-child(2) {
+  position: relative;
+}
+
+.mainImageBlock {
+  width: 100%;
+  max-width: 423px;
+  height: 480px;
+  background: colors.$color-background-fourth;
+  border-radius: toRem(10px);
+}
+
+.mainImage {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: -35px;
+}

@@ -1,0 +1,28 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.buttonsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(20px);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: toRem(20px);
+}
+
+.sizesTitle {
+  color: colors.$color-gray-light;
+  font-size: vars.$product-subheading-size;
+}
+
+.button {
+  padding: toRem(5px) toRem(8px);
+  width: 30px;
+  height: 30px;
+  border-radius: toRem(5px);
+  background: colors.$color-background-fourth;
+}
