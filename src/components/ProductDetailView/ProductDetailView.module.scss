@@ -4,6 +4,8 @@
 
 .product {
   padding-left: toRem(90px);
+  padding-bottom: toRem(70px);
+  border-bottom: 1.5px solid colors.$color-border-bottom-light-gray;
 }
 
 .productContainer {

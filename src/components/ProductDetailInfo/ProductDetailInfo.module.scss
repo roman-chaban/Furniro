@@ -3,7 +3,8 @@
 @use '../../assets/styles/functions.scss' as *;
 
 .productInfo {
-  display: flex;
+  width: 100%;
+  max-width: 610px;
 }
 
 .infoBlock {
@@ -56,4 +57,54 @@
   text-align: justify;
   font-size: vars.$subheading-small-size;
   max-width: 400px;
+}
+
+.detailInfo {
+  padding-top: toRem(40px);
+  display: flex;
+  flex-direction: column;
+  gap: toRem(15px);
+}
+
+.detailTitleBlock {
+  display: flex;
+  align-items: center;
+  gap: toRem(61px);
+  color: colors.$color-gray-light;
+}
+
+.detailTitle {
+  display: flex;
+  align-items: center;
+  color: colors.$color-gray-light;
+}
+
+.detailShareMedias {
+  display: flex;
+  align-items: center;
+  gap: toRem(61px);
+  color: colors.$color-gray-light;
+}
+
+.mediaBlockItem {
+  background: transparent;
+}
+
+.mediaBlockItems {
+  display: flex;
+  align-items: center;
+  gap: toRem(25px);
+}
+
+.shortTitle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 50px;
+  position: relative;
+  &::after {
+    content: ':';
+    position: absolute;
+    left: 85px;
+  }
 }

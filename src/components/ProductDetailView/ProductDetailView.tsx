@@ -1,7 +1,6 @@
 import { Product } from '@/interfaces/products';
 import { FC } from 'react';
 import styles from './ProductDetailView.module.scss';
-import Image from 'next/image';
 import { ProductDetailViewGallery } from '../ProductDetailViewGallery/ProductDetailViewGallery';
 import { ProductDetailInfo } from '../ProductDetailInfo/ProductDetailInfo';
 
