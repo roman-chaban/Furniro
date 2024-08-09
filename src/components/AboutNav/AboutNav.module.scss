@@ -1,0 +1,27 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: toRem(48px);
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  gap: toRem(52px);
+}
+
+.navMenuListItem {
+  font-weight: 500;
+  color: colors.$color-primary;
+  font-size: vars.$card-heading-size;
+}
+
+.active {
+  font-weight: 500;
+  color: colors.$color-gray-light;
+}

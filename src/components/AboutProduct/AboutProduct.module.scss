@@ -1,0 +1,50 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(40px);
+  padding: 0 toRem(100px);
+  padding-bottom: toRem(65px);
+  margin-bottom: toRem(55px);
+  border-bottom: 1.5px solid colors.$color-border-bottom-light-gray;
+}
+
+.aboutSubHeadings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: toRem(30px);
+}
+
+.primarySubHeading,
+.secondarySubHeading {
+  width: 100%;
+  max-width: 990px;
+  text-align: justify;
+  color: colors.$color-gray-light;
+  line-height: 150%;
+}
+
+.additionalInformation,
+.reviews {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: toRem(29px);
+}
+
+.aboutGalleryImage {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}

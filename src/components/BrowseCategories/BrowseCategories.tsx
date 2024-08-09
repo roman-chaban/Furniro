@@ -21,12 +21,12 @@ export const BrowseCategories: FC = () => {
           {categoriesCards.map((card: CategoryCard) => (
             <div className={styles.categoryCard} key={card.title}>
               <Image
-                priority
                 className={styles.cardImage}
                 src={card.image}
                 alt={card.title}
                 width={381}
                 height={400}
+                priority
               />
               <Link href={card.href}>
                 <h4 className={styles.categoryCardTitle}>{card.title}</h4>

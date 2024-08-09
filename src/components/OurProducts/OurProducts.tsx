@@ -1,33 +1,51 @@
 'use client';
 
-import { Fragment, useEffect, useState, type FC } from 'react';
+import { useEffect, useState, type FC } from 'react';
 import styles from './OurProducts.module.scss';
 import products from '@/api/products/products.json';
 import { Product } from '@/interfaces/products';
-import Image from 'next/image';
 import { Button } from '../UI components/Button/Button';
-import { additionalSocials } from '@/constants/additionalMedias';
 import { ProductCard } from '../Product/Product';
 
 interface Props {
-  isShop: boolean;
+  isShop?: boolean;
+  productsTitle: string;
+  className?: string;
+  numberOfProductsToShow?: number;
 }
 
-export const OurProducts: FC<Props> = ({ isShop }) => {
-  const [currentProducts, setCurrentProducts] = useState<Product[]>();
+export const OurProducts: FC<Props> = ({
+  isShop,
+  productsTitle,
+  className,
+  numberOfProductsToShow,
+}) => {
+  const [currentProducts, setCurrentProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     setCurrentProducts(products);
   }, []);
 
+  const productsToShow = numberOfProductsToShow
+    ? currentProducts.slice(0, numberOfProductsToShow)
+    : currentProducts;
+
   return (
-    <section className={styles.ourProducts}>
+    <section className={`${styles.ourProducts} ${styles.relatedProducts}`}>
       <div className={styles.ourProducts__container}>
-        {!isShop && <h2 className={styles.ourProducts__title}>Our Products</h2>}
+        {!isShop && (
+          <h2 className={`${styles.ourProducts__title} ${className}`}>
+            {productsTitle}
+          </h2>
+        )}
         <div className={styles.productsCards}>
-          {currentProducts?.map((product: Product, indx) => (
-            <ProductCard product={product} key={indx + 1} />
-          ))}
+          {productsToShow.length > 0 ? (
+            productsToShow.map((product: Product, indx) => (
+              <ProductCard product={product} key={indx + 1} />
+            ))
+          ) : (
+            <p>No products available.</p>
+          )}
         </div>
         {!isShop && (
           <Button className={styles.ourProductsShowMoreButton}>
