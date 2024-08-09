@@ -14,25 +14,41 @@ interface AboutNavProps {
   reviewsRating: string;
 }
 
-export const AboutNav: FC<AboutNavProps> = ({ navLabels, onTabClick, activeTab, reviewsRating }) => {
+export const enum NavLabels {
+  DESCRIPTION = 'description',
+  ADDITIONAL = 'additionalInformation',
+  REVIEWS = 'reviews',
+}
+export const AboutNav: FC<AboutNavProps> = ({
+  navLabels,
+  onTabClick,
+  activeTab,
+  reviewsRating,
+}) => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.navMenu}>
-      <li
-          className={`${styles.navMenuListItem} ${activeTab === 'description' ? styles.active : ''}`}
-          onClick={() => onTabClick('description')}
+        <li
+          className={`${styles.navMenuListItem} ${
+            activeTab === NavLabels.DESCRIPTION ? styles.active : ''
+          }`}
+          onClick={() => onTabClick(NavLabels.DESCRIPTION)}
         >
           {navLabels.description}
         </li>
         <li
-          className={`${styles.navMenuListItem} ${activeTab === 'additionalInformation' ? styles.active : ''}`}
-          onClick={() => onTabClick('additionalInformation')}
+          className={`${styles.navMenuListItem} ${
+            activeTab === NavLabels.ADDITIONAL ? styles.active : ''
+          }`}
+          onClick={() => onTabClick(NavLabels.ADDITIONAL)}
         >
           {navLabels.additionalInformation}
         </li>
         <li
-          className={`${styles.navMenuListItem} ${activeTab === 'reviews' ? styles.active : ''}`}
-          onClick={() => onTabClick('reviews')}
+          className={`${styles.navMenuListItem} ${
+            activeTab === NavLabels.REVIEWS ? styles.active : ''
+          }`}
+          onClick={() => onTabClick(NavLabels.REVIEWS)}
         >
           {navLabels.reviews} {`[${Math.ceil(+reviewsRating)}]`}
         </li>

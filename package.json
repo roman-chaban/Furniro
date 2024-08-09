@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.4",
     "@reduxjs/toolkit": "^2.2.7",
     "grommet-icons": "^4.12.1",
     "next": "^14.2.5",
