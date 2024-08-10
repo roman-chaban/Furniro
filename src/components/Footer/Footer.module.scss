@@ -2,6 +2,11 @@
 @use '../../assets/styles/variables.scss' as vars;
 @use '../../assets/styles/functions.scss' as *;
 
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
 .footer__container {
   display: flex;
   flex-direction: column;

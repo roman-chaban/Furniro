@@ -1,41 +1,53 @@
+'use client';
+
 import type { Metadata } from 'next';
-import { Poppins, Montserrat } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import '@/assets/styles/layout.scss';
 import Header from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import { MainContainer } from '@/customContainers/mainContainer';
+import { useState } from 'react';
+import { CartSidebar } from '@/components/CartSidebar/CartSidebar';
 
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800', '900'],
 });
 
-// const montserrat = Montserrat({
-//   subsets: ['latin'],
-//   weight: ['400', '500', '600', '700', '800', '800'],
-// });
-
 const fonts = `${poppins.className}`;
-
-export const metadata: Metadata = {
-  title: 'Furniro',
-  description:
-    'Furniro is an innovative platform aimed at transforming the furniture shopping experience through cutting-edge technology and user-centered design. Our goal is to create a comprehensive and intuitive online marketplace that makes furniture shopping both efficient and enjoyable.',
-  icons: '/favicon/furniro-favicon.svg',
-};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [isSidebarVisible, setIsSidebarVisible] = useState<boolean>(false);
+
+  const handleSideBarToggle = (isVisible: boolean) => {
+    setIsSidebarVisible(isVisible);
+  };
+
   return (
     <html lang="en">
-      <body className={fonts}>
+      <head>
+        <title>Furniro</title>
+        <link
+          rel="shortcut icon"
+          href="/favicon/furniro-favicon.svg"
+          type="image/x-icon"
+        />
+      </head>
+      <body className={`${fonts}`}>
         <MainContainer>
-          <Header />
+          <Header onSidebarToggle={handleSideBarToggle} />
           <main className="main">{children}</main>
           <Footer />
+          {isSidebarVisible && (
+            <>
+              <div className="background-overlay"></div>
+              <CartSidebar />
+            </>
+          )}
         </MainContainer>
       </body>
     </html>

@@ -1,0 +1,78 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.cartSidebarContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  width: 417px;
+  height: 746px;
+  background-color: white;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.cartSidebarHeader {
+  padding: toRem(28px) toRem(40px) toEm(28px) toEm(27px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: toRem(26px);
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 71px;
+    height: 1.5px;
+    width: toRem(300px);
+    background: colors.$color-border-bottom-light-gray;
+  }
+}
+
+.cartSidebarHeaderTitle {
+  font-weight: 600;
+  color: colors.$color-primary;
+  font-size: vars.$card-heading-size;
+}
+
+.closeIcon {
+  cursor: pointer;
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.cartSidebarBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 toRem(40px) toRem(23px) toEm(27px);
+  flex: 1 1 auto;
+}
+
+.subTotalPrice {
+  font-weight: 500;
+  color: colors.$color-primary;
+}
+
+.cartSidebarFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: toRem(15px);
+  border-top: 1.5px solid colors.$color-border-bottom-light-gray;
+  padding: toRem(26px) toRem(22px) toRem(28px) toRem(27px);
+}
+
+.button {
+  font-size: vars.$subheading-small-size;
+  padding: toRem(6px) toRem(30px);
+  border: 1.5px solid colors.$color-primary;
+  border-radius: toRem(50px);
+  background: transparent;
+  font-weight: 500;
+}
