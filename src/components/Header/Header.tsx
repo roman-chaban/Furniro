@@ -52,16 +52,21 @@ const Header: FC<HeaderProps> = ({ onSidebarToggle }) => {
           </div>
           <nav className={styles.header__nav}>
             <ul className={styles.menu}>
-              {navigationPaths.map((link) => (
-                <li key={link} className={styles.menu__listItem}>
-                  <Link
-                    href={NavigationPaths[link]}
-                    className={styles.listLink}
-                  >
-                    {link.charAt(0) + link.slice(1).toLowerCase()}
-                  </Link>
-                </li>
-              ))}
+              {navigationPaths.map((link) => {
+                const isActive = pathname === NavigationPaths[link];
+                return (
+                  <li key={link} className={styles.menu__listItem}>
+                    <Link
+                      href={NavigationPaths[link]}
+                      className={`${styles.listLink} ${
+                        isActive ? styles.activeLink : ''
+                      }`}
+                    >
+                      {link.charAt(0) + link.slice(1).toLowerCase()}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
           <div className={styles.headerNav__features}>

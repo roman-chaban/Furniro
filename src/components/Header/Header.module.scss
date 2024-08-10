@@ -39,11 +39,37 @@
     color: colors.$color-primary;
     font-weight: 500;
     font-size: vars.$subheading-primary-size;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
   }
+}
+
+.listLink::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  border-radius: 2px;
+  opacity: 0;
+  background-color: colors.$color-border-bottom-light-gray;
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    left 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.listLink:hover::after {
+  opacity: 1;
+  width: 100%;
 }
 
 .headerNav__features {
   display: flex;
   align-items: center;
   gap: toRem(45px);
+}
+
+.activeLink {
+  color: colors.$color-gray-primary !important;
 }
