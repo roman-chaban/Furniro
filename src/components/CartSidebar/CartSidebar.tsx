@@ -6,7 +6,7 @@ import { icon } from '@/constants/shoppingCartIcon';
 import { Button } from '../UI components/Button/Button';
 
 interface CartSidebarProps {
-  onClose: () => void;
+  onClose?: () => void;
 }
 
 export const CartSidebar: FC<CartSidebarProps> = ({ onClose }) => {
@@ -16,7 +16,7 @@ export const CartSidebar: FC<CartSidebarProps> = ({ onClose }) => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
         sidebarRef.current &&
-        !sidebarRef.current.contains(event.target as Node)
+        !sidebarRef.current.contains(event.target as Node) && onClose
       )
         onClose();
     };
