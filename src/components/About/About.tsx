@@ -10,6 +10,8 @@ import {
   comparisonProducts,
 } from '@/interfaces/comparisonProducts';
 import { DropDown } from '../UI components/DropDown/DropDown';
+import { AboutList } from '../AboutList/AboutList';
+import { Benefits } from '../Shop/Benefits';
 
 export const About: FC = () => {
   const handleSelect = (selectedOption: string) => {
@@ -53,9 +55,7 @@ export const About: FC = () => {
                   </span>
                   <div className={styles.stars}>
                     {product.ratingStars.map((star, index) => (
-                      <Fragment key={index}>
-                        {star.icon}
-                      </Fragment>
+                      <Fragment key={index}>{star.icon}</Fragment>
                     ))}
                   </div>
                   <h5 className={styles.reviewsCustomers}>
@@ -74,6 +74,8 @@ export const About: FC = () => {
           />
         </div>
       </div>
+      <AboutList />
+      <Benefits />
     </div>
   );
 };

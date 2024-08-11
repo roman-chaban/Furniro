@@ -10,7 +10,7 @@
 
 .aboutPreviewBlock {
   display: flex;
-  gap: toRem(70px);
+  gap: 7.375rem;
   padding: 0 toRem(125px) toRem(64px) toRem(96px);
   border-bottom: 1.5px solid colors.$color-about-border-bottom;
 }
