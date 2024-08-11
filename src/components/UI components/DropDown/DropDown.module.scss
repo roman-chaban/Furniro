@@ -1,0 +1,75 @@
+@use '../../../assets/styles/colors.scss' as colors;
+@use '../../../assets/styles/variables.scss' as vars;
+@use '../../../assets/styles/functions.scss' as *;
+
+.dropDown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 242px;
+  background: colors.$color-tertiary;
+  padding: toRem(7px);
+  border-radius: toRem(6px);
+  height: 39px;
+  cursor: pointer;
+}
+
+.dropDownMenu {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(10px);
+  width: 100%;
+  position: absolute;
+  top: 125%;
+  left: 0;
+  background: colors.$color-tertiary;
+  padding: toRem(12px);
+  z-index: 1000;
+  border-radius: toRem(6px);
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropDownMenu.open {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.dropDownButton {
+  width: 100%;
+  justify-content: space-between;
+  background: colors.$color-tertiary;
+  font-size: vars.$product-subheading-size;
+  color: colors.$color-background;
+  font-weight: 600;
+  line-height: 126%;
+  display: flex;
+  align-items: center;
+}
+
+.dropDownItem {
+  background: colors.$color-tertiary;
+  font-size: vars.$product-subheading-size;
+  color: colors.$color-background;
+  font-weight: 600;
+  line-height: 126%;
+  padding: toRem(10px);
+  border-radius: toRem(4px);
+}
+
+.dropDownItem:hover {
+  background: colors.$color-secondary;
+}
+
+.dropDownIcon {
+  color: colors.$color-background;
+  transition: transform 0.3s ease;
+}
+
+.dropDownButton > .rotate {
+  transform: rotate(180deg);
+}

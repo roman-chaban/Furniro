@@ -1,4 +1,3 @@
-'use client';
 import { Arrow } from '../Button/ArrowLink';
 import styles from './Poster.module.scss';
 

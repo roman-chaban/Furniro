@@ -1,0 +1,148 @@
+@use '../../assets/styles/colors.scss' as colors;
+@use '../../assets/styles/variables.scss' as vars;
+@use '../../assets/styles/functions.scss' as *;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(35px);
+}
+
+.aboutPreviewBlock {
+  display: flex;
+  gap: toRem(70px);
+  padding: 0 toRem(125px) toRem(64px) toRem(96px);
+  border-bottom: 1.5px solid colors.$color-about-border-bottom;
+}
+
+.previewPrimaryBlock {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  justify-content: center;
+  gap: toRem(21px);
+  width: 100%;
+  max-width: 223px;
+}
+
+.previewTitle {
+  font-size: vars.$card-heading-secondary-size;
+  width: 100%;
+  max-width: 226px;
+  font-weight: 500;
+  line-height: 128%;
+}
+
+.previewLink {
+  position: relative;
+  font-weight: 500;
+  font-size: vars.$subheading-secondary-size;
+  color: colors.$color-about-link;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    top: 25px;
+    width: 115px;
+    display: block;
+    background: colors.$color-about-link;
+  }
+}
+
+.previewSecondaryBlock {
+  width: 100%;
+  display: flex;
+  gap: toRem(47px);
+}
+
+.product {
+  flex: 0 0 280px;
+  box-sizing: border-box;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(6px);
+}
+
+.productImageBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 280px;
+  height: 170px;
+  background: colors.$color-background-fourth;
+  position: relative;
+  border-radius: toRem(10px);
+}
+
+.productImage {
+  width: 100%;
+  max-width: 240px;
+  height: 142px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.productTitle {
+  padding-top: toRem(12px);
+  font-weight: 500;
+  line-height: 126%;
+  font-size: vars.$card-heading-size;
+  color: colors.$color-primary;
+}
+
+.productSubTitle,
+.reviewsRating {
+  font-weight: 500;
+  color: colors.$color-primary;
+  font-size: vars.$subheading-primary-size;
+}
+
+.reviewsBlock {
+  padding-top: toRem(5px);
+  display: flex;
+  align-items: center;
+  gap: toRem(5px);
+}
+
+.stars {
+  padding-right: toRem(10px);
+}
+
+.reviewsCustomers {
+  position: relative;
+  color: colors.$color-gray-light;
+  font-size: vars.$subheading-small-size;
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    left: -25px;
+    top: 3px;
+    background: colors.$color-gray-light;
+    transform: rotate(90deg);
+  }
+}
+
+.previewTertiaryBlock {
+  justify-content: center;
+  height: 215px;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: toRem(15px);
+}
+
+.addProductTitle {
+  font-size: vars.$card-heading-size;
+  color: colors.$color-primary;
+  font-weight: 600;
+  line-height: 126%;
+}
