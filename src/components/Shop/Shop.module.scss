@@ -3,17 +3,16 @@
 @use '../../assets/styles/functions.scss' as *;
 @use '../../assets/styles/fonts.scss' as *;
 
-
 .shopSection {
   box-sizing: border-box;
   font-family: $poppins;
 }
 
 .productHeader {
-  max-width: 1440px;
+  width: 100%;
   height: 100px;
   flex-shrink: 0;
-  background: #F9F1E7;
+  background: #f9f1e7;
   display: flex;
   align-items: center;
   padding-inline: 100px;
@@ -32,7 +31,7 @@
   margin-left: 24px;
   width: 1px;
   height: 36px;
-  border-right: #9F9F9F solid 1px;
+  border-right: #9f9f9f solid 1px;
 }
 
 .filtersContainer {
@@ -63,7 +62,7 @@
   align-items: center;
   background: #fff;
   flex-shrink: 0;
-  color: #9F9F9F;
+  color: #9f9f9f;
   font-size: 20px;
   font-weight: 400;
 }
@@ -115,7 +114,7 @@
   justify-content: center;
 
   &:hover {
-    background-color: #9F9F9F;
+    background-color: #9f9f9f;
   }
 }
 
@@ -129,14 +128,15 @@
 
 .benefits {
   display: flex;
-  max-width: 1440px;
+  width: 100%;
   height: 270px;
   padding: 100px 50px;
   flex-direction: row;
-  justify-content: space-between;
+  gap: toRem(55px);
+  justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background: #FAF3EA;
+  background: #faf3ea;
 }
 
 .benefitsContainer {

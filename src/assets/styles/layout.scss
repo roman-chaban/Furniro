@@ -15,10 +15,11 @@ body {
 }
 
 .main {
-  position: relative;
-  z-index: 1;
-  flex: 1 1 auto;
-  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .background-overlay {

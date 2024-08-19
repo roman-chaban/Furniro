@@ -4,6 +4,7 @@
 @use '../../assets/styles/fonts.scss' as *;
 
 .heroSection {
+  width: 100%;
 }
 
 .heroSection .heroContent {
@@ -15,7 +16,7 @@
   max-width: 100%;
   height: toRem(720px);
   background: url('/images/hero/hero-banner.svg') no-repeat center center;
-  object-fit: cover;
+  background-size: cover;
   margin-bottom: toRem(56px);
 }
 

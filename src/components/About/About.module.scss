@@ -4,12 +4,18 @@
 
 .about {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: toRem(35px);
 }
 
 .aboutPreviewBlock {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
   gap: 7.375rem;
   padding: 0 toRem(125px) toRem(64px) toRem(96px);
   border-bottom: 1.5px solid colors.$color-about-border-bottom;

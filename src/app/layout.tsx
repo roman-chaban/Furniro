@@ -38,7 +38,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${fonts}`}>
-        <MainContainer>
+        <>
           <Header onSidebarToggle={handleSideBarToggle} />
           <main className="main">{children}</main>
           <Footer />
@@ -48,7 +48,7 @@ export default function RootLayout({
               <CartSidebar />
             </>
           )}
-        </MainContainer>
+        </>
       </body>
     </html>
   );

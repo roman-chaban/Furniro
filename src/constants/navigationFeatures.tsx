@@ -62,7 +62,7 @@ export const navigationFeatures: NavItem[] = [
         />
       </svg>
     ),
-    path: '',
+    path: '/cart',
   },
   {
     id: 4,

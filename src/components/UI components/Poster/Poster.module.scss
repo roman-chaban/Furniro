@@ -4,7 +4,8 @@
   align-items: center;
   width: 100%;
   min-height: 316px;
-  background: url('/images/shop/ShopPoster.png') no-repeat;
+  background: url('/images/shop/ShopPoster.png') no-repeat center center;
+  background-size: cover;
 }
 
 .linksContainer {

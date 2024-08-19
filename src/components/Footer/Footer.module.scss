@@ -10,13 +10,13 @@
 .footer__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-top: 1.5px solid colors.$color-footer-border-top;
   padding: toRem(48px) toRem(100px) toRem(48px) toRem(100px);
 }
 
 .footerMenu {
   display: flex;
+  justify-content: space-between;
   gap: toRem(135px);
   padding-bottom: toRem(50px);
 }

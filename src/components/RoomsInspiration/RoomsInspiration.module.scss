@@ -11,6 +11,7 @@
 .roomsContainer {
   width: 100%;
   align-items: center;
+  justify-content: center;
   display: flex;
   gap: toRem(42px);
   margin-bottom: toRem(67px);
